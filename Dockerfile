@@ -14,3 +14,8 @@ COPY ${JAR_FILE} app.jar
 
 # java -jar /opt/app/app.jar
 ENTRYPOINT ["java","-jar","app.jar"]
+
+#docker build -t bookfinder .
+#docker image ls 
+#docker run -it -p 8080:8080 bookfinder:latest 
+#docker push amitjha10/bookfinder
