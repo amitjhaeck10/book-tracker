@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Finder</title>
+</head>
+<body>
+    <div th:fragment="search-panel">
+        <form action="search.html" th:attr="action=@{/search}">
+            <div class="input-group mb-3">
+                <input type="text" name="query" class="form-control" placeholder="search" aria-label="search" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

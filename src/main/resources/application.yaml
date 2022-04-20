@@ -1,0 +1,35 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId:
+            clientSecret:
+
+  data:
+    cassandra:
+      keyspace-name: database
+      username:
+      password:
+      schema-action: CREATE_IF_NOT_EXISTS
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 30s
+        init-query-timeout: 30s
+
+datastax.astra:
+  secure-connect-bundle: secure-connect-booktracker.zip
+
+data.location:
+  author: src/main/resources/data/author-data.txt
+  work: src/main/resources/data/work-data.txt
+
+astra:
+  db:
+    id:
+    region: us-east1
+    keyspace: database
+    application:
+      token:
